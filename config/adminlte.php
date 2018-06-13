@@ -1,14 +1,14 @@
 <?php
-$con=mysqli_connect("localhost","root","","kolekcija");
-$query = "select count(film_id) from filmovi
- where deleted=0";
-$filmovi= mysqli_query($con,$query) or die(mysql_error());
-while($row = mysqli_fetch_assoc($filmovi)){
-    foreach($row as $cname => $brojfilmova){
-       
-    }
-     
-}
+//$con=mysqli_connect("localhost","root","","kolekcija");
+//$query = "select count(film_id) from filmovi
+// where deleted=0";
+//$filmovi= mysqli_query($con,$query) or die(mysql_error());
+//while($row = mysqli_fetch_assoc($filmovi)){
+//    foreach($row as $cname => $brojfilmova){
+//       
+//    }
+//     
+//}
 return [
 
     /*
@@ -127,7 +127,7 @@ return [
             'text'        => 'Filmovi',
             'url'         => '/videoteka',
             'icon'        => 'file-movie-o',
-            'label'       => $brojfilmova,
+            'label'       => 11,
             'label_color' => 'success',
         ],
        
